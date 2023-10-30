@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://Blog-App:Anaolivia1996@blog-app.ncv4dbc.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('')
 
 app.post('/register', async(req,res) => {
     const {username,password} = req.body;
@@ -18,4 +18,3 @@ app.post('/register', async(req,res) => {
 
 app.listen(4000); 
 
-//mongodb+srv://Blog-App:<password>@blog-app.ncv4dbc.mongodb.net/?retryWrites=true&w=majority
