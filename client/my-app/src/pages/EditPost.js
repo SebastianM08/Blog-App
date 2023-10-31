@@ -9,8 +9,7 @@ export default function EditPost() {
   const [content,setContent] = useState('');
   const [files, setFiles] = useState('');
   const [redirect,setRedirect] = useState(false);
-
-  useEffect(() => {
+    useEffect(() => {
     fetch('http://localhost:4000/post/'+id)
       .then(response => {
         response.json().then(postInfo => {
